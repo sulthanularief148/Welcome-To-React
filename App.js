@@ -1,10 +1,6 @@
-const heading1 = React.createElement(
-    "h1",
-    {
-        id: "heading1",
-    },
-    "Hello, world!"
-);
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const heading2 = React.createElement(
     "h2",
     {
@@ -17,7 +13,14 @@ const container = React.createElement(
     {
         id: "container",
     },
-    [heading1, heading2]
+    [React.createElement(
+    "h1",
+    {
+        id: "heading1",
+    },
+    "Hello, world!"
+), heading2]
 );
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(container);
+
