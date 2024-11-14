@@ -87,6 +87,7 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 ## What is Parcel?
 
 **Parcel** is a fast, zero-configuration JavaScript bundler that simplifies the process of building web applications. Key features include:
+`https://parceljs.org`
 
 - **Dev Build** – Simplifies the development build process.
 - **Local Server** – Built-in server for running the app locally.
@@ -105,4 +106,12 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 - **Tree Shaking** – Removes unused code to reduce bundle size.
 - **Different Dev and Prod Bundles** – Separates development and production builds for optimized performance.
 
----
+## What is Type Module in Script Tag and Why?
+
+## What is BrowserList?
+
+## What is ReactElement and HTML Element?
+
+## What is JSX?
+
+## What is Babel?
