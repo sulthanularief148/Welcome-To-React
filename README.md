@@ -115,3 +115,65 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 ## What is JSX?
 
 ## What is Babel?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Swiggy Project -->
+
+1.Planning
+  - WireFrames
+
+  
+
+  App
+   Header
+    - Logo
+    - Navigation bar
+     - Home
+     - About
+     - Contact
+     - Cart
+   Body
+    - Search Bar
+    - Restaurant Container
+     - Restaurant Card
+        - Img
+        - Restaurant Name
+        - Rating
+        - Cuisine
+        - timing
+   Footer
+    - Copty Rights
+    - Links
+    - Address
+    - Contact
