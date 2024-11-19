@@ -177,3 +177,8 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
     - Links
     - Address
     - Contact
+
+- Component Composition
+
+
+- Conflict-Driven UI

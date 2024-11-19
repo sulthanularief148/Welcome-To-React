@@ -23,14 +23,17 @@
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 15px;
 }
 .res-card {
     border: 1px solid grey;
-    width: 24%;
+    width: 22%;
     height: auto;
+    padding: 15px;
 }
 .res-img {
-    width: 200px;
+    width: 100%;
+    object-fit: cover;
     height: 200px;
 }
 
