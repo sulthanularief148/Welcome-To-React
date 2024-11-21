@@ -2,9 +2,11 @@
 
 Welcome to the React World! This guide will walk you through essential tools, concepts, and practices for working with React and its ecosystem.
 
+---
+
 ## Extensions
 
-Here are some helpful VS Code extensions for React development:
+Here are some helpful **VS Code extensions** for React development:
 
 1. **Better Comments** – Improves code commenting with different colors and styles.
 2. **Bracket Pair Colorization Toggler** – Adds color to matching brackets for better readability.
@@ -13,31 +15,67 @@ Here are some helpful VS Code extensions for React development:
 5. **Prettier** – Automatically formats your code to ensure consistency and readability.
 6. **vscode-icons** – Adds icons to files and folders in VS Code for better visual identification.
 
+---
+
 ## What is React?
 
-React is a JavaScript library developed by Facebook for building user interfaces, specifically for single-page applications (SPAs). It allows developers to create reusable UI components and efficiently update and render the right components when data changes, using a **virtual DOM** for improved performance.
+**React** is a JavaScript library developed by Facebook for building user interfaces, specifically for single-page applications (SPAs). It allows developers to:
+
+- Create **reusable UI components**.
+- Efficiently update and render components with changing data using the **virtual DOM**.
+
+---
 
 ## What is ReactDOM?
 
-**ReactDOM** is a package that provides **DOM-specific methods** used in web applications built with React. It allows React components to be rendered and updated in the browser.
+**ReactDOM** is a package providing **DOM-specific methods** used in web applications built with React. It allows React components to be:
+
+- Rendered in the browser.
+- Updated dynamically as the application state changes.
+
+---
 
 ## Difference Between Library and Framework
 
-### **Library**:
+### Library
 
-- A library is a collection of pre-written code that provides specific functionality or utilities, allowing developers to call specific functions to perform tasks.
+- A collection of pre-written code that provides specific functionality or utilities.
+- Developers call specific functions to perform tasks.
+  
+### Framework
 
-### **Framework**:
+- A more structured platform offering a foundation for application development.
+- Defines architecture and often enforces a code structure.
 
-- A framework is a more structured platform that defines a foundation for building applications. It provides a complete architecture and often dictates how the application should be structured and how code should flow.
+---
 
 ## What is a CDN?
 
-A **CDN (Content Delivery Network)** is a network of geographically distributed servers that work together to deliver web content, such as images, scripts, and videos, to users more efficiently. By caching content on multiple servers worldwide, CDNs reduce latency, improve load times, and provide a better user experience by serving content from the server closest to the user’s location.
+**CDN (Content Delivery Network)** is a network of geographically distributed servers that:
+
+- Deliver web content (e.g., images, scripts, videos) efficiently.
+- Reduce latency and improve load times by serving content from servers closest to users.
+
+---
 
 ## What is NPM?
 
-**NPM (Node Package Manager)** is a package manager for JavaScript that allows developers to install, share, and manage code packages (libraries or modules) for Node.js projects. It is widely used in the JavaScript ecosystem to manage dependencies and tools.
+**NPM (Node Package Manager)** is:
+
+- A package manager for JavaScript.
+- Used to install, share, and manage packages (libraries or modules) for Node.js projects.
+
+### Common Commands:
+```bash
+# Initialize a new project
+npm init
+
+# Install a package
+npm install <package-name>
+
+# Install a package as a dev dependency
+npm install <package-name> --save-dev
+```
 
 ## What is package.json?
 
@@ -107,15 +145,37 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 - **Different Dev and Prod Bundles** – Separates development and production builds for optimized performance.
 
 ## What is Type Module in Script Tag and Why?
-
+- The type="module" attribute in the<```script>``` tag specifies that the script should be treated as an ECMAScript module. Modules are JavaScript files that can import and export functionality, enabling modular and reusable code. Modern browsers support ES modules, allowing features like scoped variables and asynchronous loading.
 ## What is BrowserList?
+- Browserslist is a tool used in modern web development to specify which browsers a project should support. It works with tools like Babel, Autoprefixer, and others to ensure compatibility with the specified browsers. Configuration is done in a browserslist file or within package.json.
+> 1%
+last 2 versions
+not dead
 
 ## What is ReactElement and HTML Element?
-
+- ReactElement: An immutable representation of a UI component in React. It’s created by calling React.createElement or using JSX syntax.
+- HTMLElement: A DOM object representing an element on a webpage, directly managed by the browser.
 ## What is JSX?
 
 ## What is Babel?
 
+## What is Webpack?
+
+## What is Component?
+
+## What is Component Composition?
+
+## What is Props?
+
+## What is API?
+
+## WHat is Conflict Driven UI?
+
+## What is render and rerender in react?
+
+## What is Object Destructuring in React?
+
+## What is Key Props in React?
 
 
 
@@ -135,13 +195,7 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 
 
 
-
-
-
-
-
-
-
+<!-- 10-12:30 -->
 
 
 
@@ -152,9 +206,6 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 
 1.Planning
   - WireFrames
-
-  
-
   App
    Header
     - Logo
@@ -182,3 +233,21 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 
 
 - Conflict-Driven UI
+
+- Reconciliation Algorithm also Known as React Fiber(Come up with React 16)
+- React Fiber New way of finding The div udating the DOM
+- Virtual DOM is Representation of the Actual DOM
+- Virutal DOM is Basically React Element 
+
+- Diff Algorithm
+
+- Finds out the difference between two(old and updated) virtual DOM
+- It will then Calculate the Differece and Update the DOM every render cycle
+
+
+- Finds out the difference between 2 html element is hard and Object is easy
+
+
+## Why React is Fast?
+- React is doing efficient DOM Manipulation because it has Virtual DOM
+
