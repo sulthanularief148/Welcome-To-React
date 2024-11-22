@@ -195,41 +195,12 @@ not dead
 
 
 
-<!-- 10-12:30 -->
 
 
+<!-- useState -->
+<!-- useEffect -->
 
 
-
-
-<!-- Swiggy Project -->
-
-1.Planning
-  - WireFrames
-  App
-   Header
-    - Logo
-    - Navigation bar
-     - Home
-     - About
-     - Contact
-     - Cart
-   Body
-    - Search Bar
-    - Restaurant Container
-     - Restaurant Card
-        - Img
-        - Restaurant Name
-        - Rating
-        - Cuisine
-        - timing
-   Footer
-    - Copty Rights
-    - Links
-    - Address
-    - Contact
-
-- Component Composition
 
 
 - Conflict-Driven UI
@@ -251,3 +222,5 @@ not dead
 ## Why React is Fast?
 - React is doing efficient DOM Manipulation because it has Virtual DOM
 
+
+React  Fiber Github Link: https://github.com/facebook/react/blob/master/packages/react-reconciler/src/ReactFiber
