@@ -5,7 +5,7 @@ import Footer from "./src/components/Footer"
 import Body from "./src/components/Body"
 
 const App = () => {
-    console.log(<Body />)
+    console.log(<Header />)
     return (
         <div className='app'>
             <Header />

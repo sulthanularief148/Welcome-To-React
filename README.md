@@ -147,35 +147,57 @@ A **bundler** is a tool that takes multiple JavaScript files and dependencies, c
 ## What is Type Module in Script Tag and Why?
 - The type="module" attribute in the<```script>``` tag specifies that the script should be treated as an ECMAScript module. Modules are JavaScript files that can import and export functionality, enabling modular and reusable code. Modern browsers support ES modules, allowing features like scoped variables and asynchronous loading.
 ## What is BrowserList?
-- Browserslist is a tool used in modern web development to specify which browsers a project should support. It works with tools like Babel, Autoprefixer, and others to ensure compatibility with the specified browsers. Configuration is done in a browserslist file or within package.json.
+- **Browserslist** is a tool used in modern web development to specify which browsers a project should support. It works with tools like Babel, Autoprefixer, and others to ensure compatibility with the specified browsers. Configuration is done in a browserslist file or within package.json.
 > 1%
 last 2 versions
 not dead
 
 ## What is ReactElement and HTML Element?
-- ReactElement: An immutable representation of a UI component in React. It’s created by calling React.createElement or using JSX syntax.
-- HTMLElement: A DOM object representing an element on a webpage, directly managed by the browser.
+- **ReactElement:** An immutable representation of a UI component in React. It’s created by calling React.createElement or using JSX syntax.
+- **HTMLElement:** A DOM object representing an element on a webpage, directly managed by the browser.
 ## What is JSX?
-
 ## What is Babel?
-
 ## What is Webpack?
-
 ## What is Component?
-
 ## What is Component Composition?
-
 ## What is Props?
-
 ## What is API?
-
 ## WHat is Conflict Driven UI?
-
 ## What is render and rerender in react?
-
 ## What is Object Destructuring in React?
-
 ## What is Key Props in React?
+## What is Conditional Rendering in React?
+## What is Hooks?
+## What is useState Hook in React?
+## What is useEffect Hook in React?
+## What is Dependency Array?
+## What is Reconciliation Algorithm?
+## What is React Fiber?
+- [text](https://github.com/facebook/react/blob/master/packages/react-reconciler/src/ReactFiber)
+## What is Diff Algorithm?
+## What is Virtual DOM?
+## What is DOM?
+## DIfference between DOM and Virtual DOM?
+## What is DOM Mutation?
+## What is Monolithic Architecture?
+## What is Microservices Architecture?
+## Why React Reaet is Fast and Where?
+## What is Conflict Driven UI?
+
+
+
+Note:
+- When ever the state variable change React will ren render the component(react triggers reconciliation cycle)
+
+- Login/Logout functionality
+- Search Functionality
+
+- const [localVaribale, stateVariable] = useState("")
+- After state Varibale change React will refresh the component and the change the state variable will be reflected in the component.
+
+
+<!-- Mobile Responsive Navigation -->
+Navbar shoul be flex direction Column
 
 
 
@@ -197,30 +219,3 @@ not dead
 
 
 
-<!-- useState -->
-<!-- useEffect -->
-
-
-
-
-- Conflict-Driven UI
-
-- Reconciliation Algorithm also Known as React Fiber(Come up with React 16)
-- React Fiber New way of finding The div udating the DOM
-- Virtual DOM is Representation of the Actual DOM
-- Virutal DOM is Basically React Element 
-
-- Diff Algorithm
-
-- Finds out the difference between two(old and updated) virtual DOM
-- It will then Calculate the Differece and Update the DOM every render cycle
-
-
-- Finds out the difference between 2 html element is hard and Object is easy
-
-
-## Why React is Fast?
-- React is doing efficient DOM Manipulation because it has Virtual DOM
-
-
-React  Fiber Github Link: https://github.com/facebook/react/blob/master/packages/react-reconciler/src/ReactFiber
