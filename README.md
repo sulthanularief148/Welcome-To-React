@@ -6,7 +6,7 @@ Welcome to the React World! This guide will walk you through essential tools, co
 
 ## Extensions
 
-Here are some helpful **VS Code extensions** for React development:
+<!-- Here are some helpful **VS Code extensions** for React development: -->
 
 1. **Better Comments** – Improves code commenting with different colors and styles.
 2. **Bracket Pair Colorization Toggler** – Adds color to matching brackets for better readability.
@@ -201,6 +201,8 @@ not dead
 
 ## What is useEffect Hook in React?
 - The `useEffect` hook is a function that lets you perform side effects in functional components. It runs after the component renders and can be used for tasks like data fetching, subscriptions, and manually changing the DOM.
+- `useEffect` is called after every render of the component.
+- Dependency array changes the behaviour of the render. if empty dependenct is called only initial render
 
 ## What is Dependency Array?
 - The dependency array is an optional second argument to the `useEffect` hook. It specifies the variables that the effect depends on. The effect will only re-run if one of the dependencies changes.
@@ -240,3 +242,28 @@ not dead
 
 Note:
 - Whenever the state variable changes, React will re-render the component (React triggers the reconciliation cycle).
+
+ ## useState
+   - Never create state variable outside of the component
+   - Local state varibale inside the functional component
+   - Try to call the Hook at the top level of your React function
+   - Never create the useStaet Hook inside if Else or Switch statement, for loop, function
+
+
+## Short Cut to Create The component
+ - rafce: React Arrow Function Component with Export
+ - rafc: React Arrow Function Component.
+ - fcc: Function Component with Class
+ - fccs: Function Component with Class and State
+ - fccp: Function Component with Class, State and Props
+  ## What is Router and React Router DOM
+  ## What is useRouteError
+  ## What are the types of Routing
+  ## What is Dynamic Routing and How to Do that in React
+  ## What is Client Side Routing
+  ## What is Server side Routing
+  ## What is SSRendering
+  ## What is CSRendering 
+  ## What is SPA
+
+  <!-- React router DOM -->
