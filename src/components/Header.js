@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo/logo.png";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
     const [btnName, setBtnName] = useState("Login");
     const [isOpen, setIsOpen] = useState(false);
+    const onlieStatus = useOnlineStatus()
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -37,9 +39,11 @@ const Header = () => {
             {/* Navigation Links */}
             <div className={`${isOpen ? "close" : "open"} navbar`}>
                 <ul className="nav">
+                    <li>Online Staus : {onlieStatus ? "✅" : "🔴"}</li>
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/about">About</Link> </li>
                     <li><Link to="/contact">Contact</Link> </li>
+                    <li><Link to="/grocery">Grocery</Link> </li>
                     <li><Link to="/cart">Cart</Link> </li>
                 </ul>
             </div>

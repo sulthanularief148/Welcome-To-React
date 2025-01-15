@@ -244,6 +244,7 @@ Note:
 - Whenever the state variable changes, React will re-render the component (React triggers the reconciliation cycle).
 
  ## useState
+
    - Never create state variable outside of the component
    - Local state varibale inside the functional component
    - Try to call the Hook at the top level of your React function
@@ -251,19 +252,50 @@ Note:
 
 
 ## Short Cut to Create The component
+
  - rafce: React Arrow Function Component with Export
  - rafc: React Arrow Function Component.
  - fcc: Function Component with Class
  - fccs: Function Component with Class and State
  - fccp: Function Component with Class, State and Props
-  ## What is Router and React Router DOM
-  ## What is useRouteError
-  ## What are the types of Routing
-  ## What is Dynamic Routing and How to Do that in React
-  ## What is Client Side Routing
-  ## What is Server side Routing
-  ## What is SSRendering
-  ## What is CSRendering 
-  ## What is SPA
 
-  <!-- React router DOM -->
+  ## What is Router and React Router DOM
+
+  - Router: A mechanism to define and manage navigation in applications, allowing the display of specific components based on U RL changes.
+  - React Router DOM: A library for implementing routing in React applications, providing components like ```<BrowserRouter>```, ```<Route>```, and ```<Link>``` for navigation and rendering
+
+  ## What is useRouteError
+
+  - A React Router DOM hook used to fetch error data from the ErrorBoundary during routing, helping display custom error messages or fallback UI.
+
+  ## What are the types of Routing
+
+  - Static Routing: Defined at build time, routes don't change dynamically.
+  - Dynamic Routing: Routes change dynamically based on user actions or data, defined at runtime.
+
+  ## What is Dynamic Routing and How to Do that in React
+
+  - Dynamic Routing: Adapts routes dynamically during runtime, often based on user input or API data.
+  - ```<Route path="/product/:id" element={<Product />} /> const { id } = useParams();```
+
+  ## What is Client Side Routing
+
+  - Routing managed in the browser, where URL changes don't trigger server requests but instead load content dynamically using JavaScript.
+
+  ## What is Server side Routing
+
+  - Routing managed on the server, where each URL request fetches a new HTML page from the server
+
+  ## What is SSRendering
+
+  - SSR: Generates the HTML on the server and sends it to the browser. Improves SEO and initial page load time.
+  -  Example: Frameworks like Next.js.
+
+  ## What is CSRendering 
+
+  - CSR: Renders content in the browser after downloading a minimal HTML page and loading JavaScript. Suitable for SPAs.
+
+  ## What is SPA
+  
+  - A web application where all content is dynamically loaded without refreshing the page, providing a seamless user experience.
+  - Example: Gmail or Trello

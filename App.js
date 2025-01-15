@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client'
 import Header from "./src/components/Header"
 import Footer from "./src/components/Footer"
 import Body from "./src/components/Body"
 import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
-import About from './src/components/About';
 import Contact from './src/components/Contact';
 import Cart from './src/components/Cart';
 import Error from './src/components/Error';
 import RestaurantMenu from './src/components/RestaurantMenu';
+const Grocery = lazy(() => import("./src/components/Grocery"))
+const About = lazy(() => import("./src/components/About"))
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
         </div>
     )
 }
+// Chunking, Dynamic Bundling, Lazy Loading
 
 const appRouter = createBrowserRouter(
     [
@@ -32,7 +34,7 @@ const appRouter = createBrowserRouter(
                 },
                 {
                     path: "/about",
-                    element: <About />
+                    element:<Suspense fallback={<p>Loading..</p>}><About /></Suspense> 
                 },
                 {
                     path: "/contact",
@@ -45,6 +47,10 @@ const appRouter = createBrowserRouter(
                 {
                     path: "/restaurant/:resId",
                     element: <RestaurantMenu />
+                },
+                {
+                    path: "/grocery",
+                    element: <Suspense fallback={<p>Loading.....</p>}><Grocery /></Suspense>
                 }
             ],
             errorElement: <Error />

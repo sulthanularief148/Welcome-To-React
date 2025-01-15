@@ -3,7 +3,6 @@ const RestaurantCard = (props) => {
     const { name, avgRating, cuisines, cloudinaryImageId, sla, areaName } = props?.resData?.info
 
     return (
-
         <>
             {CDN_URL ? (
                 <img className='res-img' src={`${CDN_URL}${cloudinaryImageId}`} alt='res-image' />

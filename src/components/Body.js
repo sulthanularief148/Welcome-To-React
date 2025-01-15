@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
 
@@ -9,6 +10,7 @@ const Body = () => {
     const [listOfRestaurant, setListOfRestaurant] = useState([])
     const [filteredRestaurant, setFilteredRestaurant] = useState([])
     const [searchText, setSearchText] = useState("")
+    const onlineStatus = useOnlineStatus()
 
 
     useEffect(() => {
@@ -21,10 +23,13 @@ const Body = () => {
 
         const restaurant = jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants;
         setListOfRestaurant(restaurant)
-        setFilteredRestaurant(restaurant)
-    }
+        setFilteredRestaurant(restaurant);
 
-    return filteredRestaurant.length === 0 ? <Shimmer /> : (
+
+    }
+    if (onlineStatus === false) return <p>Check your Internet Connection</p>
+
+    return (!filteredRestaurant || filteredRestaurant.length === 0) ? <Shimmer /> : (
         <div className='body'>
             <div className='filter'>
                 <div className="search">
@@ -49,7 +54,7 @@ const Body = () => {
 
                 {
                     filteredRestaurant.map((restaurant) =>
-                        <div className="res-card" key={restaurant.info.id}>
+                        <div className="res-card hover:transform hover:scale-105 hover:shadow-2xl" key={restaurant.info.id}>
                             <Link to={"/restaurant/" + restaurant.info.id}><RestaurantCard resData={restaurant} /></Link>
                         </div>
                     )
